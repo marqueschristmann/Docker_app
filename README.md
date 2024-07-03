@@ -1,8 +1,21 @@
-# Uma demonstração do Docker para implementar uma arquitetura simples de 3 camadas uma aplicação TodoList
+# Demonstração Docker: Arquitetura Simples de 3 Páginas e Aplicação TodoList
 
-* atividade da disciplina densenvolvimento em nuvem ☁
+Esta é uma demonstração de Docker para implementar uma arquitetura simples de 3 páginas e uma aplicação TodoList como parte da disciplina de Denso Envolvimento em Nuvem ☁.
 
-* frontend será capaz de acessar o Backend
-* Backend será capaz de acessar o banco de dados
+## Arquitetura
 
-Para executar isso no docker, simplesmente digite ```docker-compose up``` no prompt de comando. O Docker criará o [MongoDB](https://www.mongodb.com/) a partir da imagem padrão [mongo](https://hub.docker.com/_/mongo). A API usa [nodejs](https://nodejs.org/) com [express](http://expressjs.com/) e é construída a partir de um [node:alpine](https://hub.docker.com /_/nó) imagem. O front-end usa [ReactJS](https://reactjs.org/) e é construído a partir de uma imagem [node:alpine](https://hub.docker.com/_/node).
+- O **frontend** é capaz de acessar o **backend**.
+- O **backend** é capaz de acessar o **banco de dados**.
+
+## Execução
+
+Para executar essa configuração no Docker, basta digitar `docker-compose up` no prompt de comando. O Docker criará o MongoDB a partir da imagem padrão `mongo`. 
+
+- A API usa Node.js com Express e é construída a partir da imagem [node:alpine](https://hub.docker.com/_/node).
+- O front-end usa ReactJS e também é construído a partir da imagem `node:alpine`.
+
+## Comandos
+
+1. **Subir a aplicação**:
+   ```sh
+   docker-compose up
